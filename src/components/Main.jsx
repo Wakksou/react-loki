@@ -1,11 +1,11 @@
-const Main = ({ nom, url , prix }) => {
+const Main = ({ name, url , price }) => {
         return (
         <div className="progress-bar">
-        <h3>{nom}</h3>
+        <h3>{name}</h3>
         <img src={url}
         ></img>
-        <span>{prix}euros</span>
+        <span>{price}euros</span>
         </div>
         );
-        };
-        export default Main;
+};
+export default Main;
