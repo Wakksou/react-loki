@@ -1,8 +1,8 @@
 function Footer(){
     return(
-        <a>
+        <p>
             Copyright Mexican Food 2024
-        </a>
+        </p>
     )
 }
 export default Footer;
