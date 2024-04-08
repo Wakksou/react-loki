@@ -1,4 +1,4 @@
-const Plat = ({ name, percentage }) => {
+const Main = ({ nom, url , prix }) => {
         return (
         <div className="progress-bar">
         <h3>{nom}</h3>
@@ -8,4 +8,4 @@ const Plat = ({ name, percentage }) => {
         </div>
         );
         };
-        export default Plat;
+        export default Main;
