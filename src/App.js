@@ -12,9 +12,7 @@ function App() {
         <Dish name="enchiladas" url="https://cdn.pixabay.com/photo/2014/01/14/22/13/mexican-245240_960_720.jpg" price="12"/>
         <Dish name="mole poblano" url="https://cdn.pixabay.com/photo/2021/02/04/03/57/mole-5980185_960_720.jpg" price="6"/>
       </main>
-      <footer>
-        <Footer/>
-      </footer>
+      <Footer/>
     </div>
   );
 }
