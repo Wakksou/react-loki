@@ -1,10 +1,11 @@
-function Footer(){
-    return(
+import "../assets/styles/footer.css";
+
+const Footer = () => {
+    return (
         <footer>
-            <p>
-                Copyright Mexican Food 2024
-            </p>
+            <small>Copyright Mexican Food 2024</small>
         </footer>
-    )
-}
+    );
+};
+
 export default Footer;
