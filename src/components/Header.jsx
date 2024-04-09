@@ -12,9 +12,7 @@ const Header = () => {
                 <Navbar.Brand href="#home">
                 <img
                     src={logo}
-                    alt="Un mexicain qui joue de la guitare"
-                    width="30"
-                    height="30"
+                    alt="Un mexicain avec un sombrero qui joue de la guitare"
                     className="d-inline-block align-top"
                 />
                 </Navbar.Brand>
