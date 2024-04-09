@@ -5,6 +5,7 @@ import Layout from "./components/Layout.jsx";
 import Notfound from "./pages/Notfound.jsx";
 import DishDetails from "./pages/DishDetails.jsx";
 
+
 function App() {
   return (
     <>
