@@ -2,9 +2,9 @@ import Card from "react-bootstrap/Card";
 import "../assets/styles/dish.css";
 import { Link } from 'react-router-dom';
 
-const Dish = ({ name, img, price }) => {
+const Dish = ({ name, img, price, slug }) => {
         return (
-                <Link to={'plat/${slug}'}>
+                <Link to={`/plat/${slug}`}>
                         <Card>
                                 <Card.Img variant="top" src={img} alt={name} />
                                 <Card.Body>
