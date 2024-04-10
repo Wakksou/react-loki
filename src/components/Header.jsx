@@ -22,7 +22,8 @@ const Header = () => {
                 className="justify-content-end"
                 >
                 <Nav>
-                    <Nav.Link href="/">Accueil</Nav.Link>
+                    <Nav.Link href="/accueil" activeClassName="active">Accueil</Nav.Link>
+                    <Nav.Link href="/a_propos" activeClassName="active">A propos de nous</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
             </Container>

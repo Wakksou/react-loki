@@ -4,6 +4,7 @@ import Home from "./pages/Home.jsx";
 import Layout from "./components/Layout.jsx";
 import Notfound from "./pages/Notfound.jsx";
 import DishDetails from "./pages/DishDetails.jsx";
+import About from "./pages/About.jsx";
 
 
 function App() {
@@ -11,8 +12,9 @@ function App() {
     <>
         <Routes>
           <Route element={<Layout/>}>
-            <Route index element={<Home/>}/>
-            <Route path="/plat/:id" element={<DishDetails />} />
+            <Route path="/accueil" element={<Home/>}/>
+            <Route path="/plat/:slug" element={<DishDetails />} />
+            <Route path="/a_propos" element={<About />} />
             <Route path='*' element={<Notfound/>}/>
           </Route>
         </Routes>

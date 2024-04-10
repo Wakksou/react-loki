@@ -4,12 +4,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const DishDetails = () => {
-    const { id } = useParams();
+    const { slug } = useParams();
     return (
         <Container>
             <Row>
                 <Col>
-                    <h1>l'ID : {id}</h1>
+                    <h1>l'ID : {slug}</h1>
                 </Col>
             </Row>
         </Container>
