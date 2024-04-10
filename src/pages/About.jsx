@@ -5,7 +5,6 @@ import { useParams } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 
 const About = () => {
-    const { slug } = useParams();
     return (
         <Container>
             <Row>
