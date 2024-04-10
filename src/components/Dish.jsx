@@ -3,11 +3,11 @@ import "../assets/styles/dish.css";
 import { Link } from 'react-router-dom';
 import Badge from 'react-bootstrap/Badge';
 
-const Dish = ({ name, img, price, slug, news}) => {
+const Dish = ({ name, img, price, slug, isNew}) => {
         return (
                 <Link to={`/plat/${slug}`}>
                         <Card>
-                                { news === "true" && <Badge bg="secondary">Nouveau</Badge>}
+                                { isNew === "true" && <Badge bg="secondary">Nouveau</Badge>}
                                 <Card.Img variant="top" src={img} alt={name} />
                                 <Card.Body>
                                         <Card.Title>{name}</Card.Title>
