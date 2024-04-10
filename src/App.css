@@ -2,6 +2,7 @@ main{
   margin-block: 50px;
 }
 
-.main-a {
+main a {
   text-decoration: none;
 }
+
