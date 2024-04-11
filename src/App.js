@@ -9,15 +9,15 @@ import { useEffect, useState } from 'react';
 import Cart from "./pages/Cart.jsx";
 
 function App() {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart]=useState([]);
+  const addToCart = (product) =>{
+    setCart([...cart, product])
+  }
 
-  const addToCart = (product) => {
-    setCart([...cart, product]);
-  };
   return (
     <>
         <Routes>
-          <Route element={<Layout/>}>
+          <Route element={<Layout cart={cart}/>}>
             <Route path="/" element={<Home/>}/>
             <Route path="plat/:slug" element={<DishDetails addToCart={addToCart}/>} />
             <Route path="/a_propos" element={<About />} />

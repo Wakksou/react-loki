@@ -18,6 +18,7 @@ const DishDetails = ({addToCart}) => {
         }
         setDish(currentDish);
     }, [slug, navigate]);
+
     return (
         <Container>
             {dish ? (
@@ -28,13 +29,13 @@ const DishDetails = ({addToCart}) => {
                 <Col>
                     <h1>{dish.name}</h1>
                     <p>{dish.description}</p>
-                    <p>{dish.price}€</p>
-                    <Button variant="primary" onClick={() => addToCart(dish)}>Commander</Button>
+                    <p>{dish.price}euros</p>
+                    <Button variant="primary" onClick={( ) => addToCart(dish)}>Commander</Button>
                 </Col>
             </Row>
             ) : (
                 <Row>
-                    <p>Chargement en cours...</p>
+                    <p>Chargement...</p>
                 </Row>
             )}
         </Container>
