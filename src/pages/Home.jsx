@@ -11,6 +11,7 @@ const Home = () => {
     const [showNewOnly, setShowNewOnly] = useState(false);
     const [dishes, setDishes] = useState([]);
 
+
     useEffect(() => {
         const filteredDishes = showNewOnly
         ? dishesDatas.filter((dish) => dish.isNew)
@@ -21,6 +22,9 @@ const Home = () => {
     const handleShowNewOnly = () => {
         setShowNewOnly(!showNewOnly); 
     };
+
+
+
     return (
         <Container>
             <Button onClick={handleShowNewOnly} variant="secondary" size="sm">
