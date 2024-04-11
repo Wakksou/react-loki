@@ -5,7 +5,7 @@ import "../assets/styles/header.css";
 import logo from "../assets/images/logo.webp"
 import { NavLink } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({cart}) => {
     return (
         <header>
             <Navbar expand="lg" className="bg-body-tertiary">
@@ -28,6 +28,9 @@ const Header = () => {
                     </NavLink>
                     <NavLink to="/a_propos" className={"nav-link"}>
                         A propos
+                    </NavLink>
+                    <NavLink to="/panier" className={"nav-link"}>
+                    Panier (0)
                     </NavLink>
                 </Nav>
                 </Navbar.Collapse>
