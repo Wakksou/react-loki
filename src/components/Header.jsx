@@ -30,7 +30,7 @@ const Header = ({cart}) => {
                         A propos
                     </NavLink>
                     <NavLink to="/panier" className={"nav-link"}>
-                    Panier (0)
+                    Panier ({cart.length})
                     </NavLink>
                 </Nav>
                 </Navbar.Collapse>

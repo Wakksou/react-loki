@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Table from 'react-bootstrap/Table';
 
 const Cart = ({ cart }) => {
+    console.log(cart);
 return (
     <Container>
         <Row>
@@ -17,10 +18,10 @@ return (
                     </tr>
                 </thead>
                 <tbody>
-                    {cart.map((cartItem) => (
-                        <tr>
-                            <td>{cartItem.name}</td>
-                            <td>{cartItem.price}€</td>
+                    {cart.map((item, index) => (
+                        <tr key={index}>
+                            <td>{item.name}</td>
+                            <td>{item.price}€</td>
                         </tr>
                     ))}
                 </tbody>
