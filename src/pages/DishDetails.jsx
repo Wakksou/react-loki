@@ -5,7 +5,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import dishesDatas from "../datas/dishes.json";
 import { useContext, useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
-import Cart from "./Cart";
+import React from 'react';
+import { Helmet } from 'react-helmet';
 import { CartContext } from "../utils/context/CartContext";
 
 const DishDetails = ({}) => {
@@ -23,25 +24,30 @@ const DishDetails = ({}) => {
     }, [slug, navigate]);
 
     return (
-        <Container>
-            {dish ? (
-                <Row>
+        <>
+            <Helmet>
+                <title>Détail du plat</title>
+            </Helmet>
+            <Container>
+                {dish ? (
+                    <Row>
+                        <Col>
+                            <img src={dish.img} alt={dish.name} className="mw-100" />
+                        </Col>
                     <Col>
-                        <img src={dish.img} alt={dish.name} className="mw-100" />
+                        <h1>{dish.name}</h1>
+                        <p>{dish.description}</p>
+                        <p>{dish.price}euros</p>
+                        <Button variant="primary" onClick={( ) => addToCart(dish)}>Commander</Button>
                     </Col>
-                <Col>
-                    <h1>{dish.name}</h1>
-                    <p>{dish.description}</p>
-                    <p>{dish.price}euros</p>
-                    <Button variant="primary" onClick={( ) => addToCart(dish)}>Commander</Button>
-                </Col>
-            </Row>
-            ) : (
-                <Row>
-                    <p>Chargement...</p>
                 </Row>
-            )}
-        </Container>
+                ) : (
+                    <Row>
+                        <p>Chargement...</p>
+                    </Row>
+                )}
+            </Container>
+        </>
     );
 };
 
