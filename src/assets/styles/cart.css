@@ -1,0 +1,6 @@
+.total {
+    display: flex;
+    flex-direction: column; /* Aligner les éléments en colonne */
+    align-items: flex-end; /* Aligner les éléments à droite */
+    margin-right: 20px; /* Ajouter une marge à droite pour les éloigner du bord de la page */
+}
