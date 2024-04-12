@@ -17,7 +17,7 @@ const Cart = () => {
     return (
         <>
             <Helmet>
-                <title>Page non trouvée - Mon super site</title>
+                <title>Panier</title>
             </Helmet>
             <Container>
                 <Row>

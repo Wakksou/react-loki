@@ -6,19 +6,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <CartProvider>
-      <Helmet>
-          <title>Mexican Food</title>
-          <meta name="description" content="Savourez les meilleurs plats mexicains chez vous : tacos, burritos, enchiladas. Cuisine
-          authentique et livraison rapide" />
-          <link rel="icon" type="image/png" href="..\public\favicon.ico" sizes="32x32" />
-        </Helmet>
         <App />
       </CartProvider>
     </BrowserRouter>
